@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adderjs</title>
+    <script>
+        //получаем введённое в input по его id, значение переменной равно тому, что введено в поле
+        function giver (){
+          let main_input_id = document.getElementById("main_input").value;
+        }
+          //проверяем форму на пустоту введённых данных
+          function empty_form() {
+            let main_input_id = document.getElementById("main_input").value;
+            if (main_input == "")
+            {
+              alert("Введи хоть что - нибудь");
+              return false;
+            }
+            return true;
+
+            //пытаемся сделать нажиматор кнопки, данные берем из функции giver
+        function adder_button_id() {
+            document.getElementById("add").onclick = giver;
+        }
+          }
+          //создаем элекмент ul
+          let ul = document.createElement("ul");
+          //теперь надо запихнуть полученное из main_input_id в li элементы списка
+          ul.innerHTML = "<li>"+""+main_input_id+""+"</li>";
+    </script>
+</head>
+<body>
+    
+    <div id="text">
+        <form name="adderjs">
+            <input type="text" id="main_input" size="30" placeholder="Напиши сюда, а я ебану в список">
+            <button id="add"Ебануть в список>Жать</button>
+        </form>
+</body>
+</html>
+
+
+

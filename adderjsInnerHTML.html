@@ -21,12 +21,8 @@
     <script>
       
       function giver (){
-         mainInputId = document.getElementById("mainInput").value;
-        //в переменную html запихиваем полученные данные из текстового поля 
-        
-        //запихиваем в div блок с id resultBlock значение переменной html, в которой хранится введенное из текстового поля
-        document.getElementById("resultBlock").innerHTML += '<li>' + mainInputId + '</li>';  
-        
+        value = document.getElementById("mainInput").value;
+        document.getElementById("resultBlock").innerHTML += '<li>' + value + '</li>';  
       }
       document.getElementById("add").addEventListener('click', giver);
       

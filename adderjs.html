@@ -21,10 +21,8 @@
     <script>
       
       function giver (){
-         mainInputId = document.getElementById("mainInput").value;
-        //в переменную html запихиваем полученные данные из текстового поля 
-        let html = '<li>' + mainInputId + '</li>';
-        //запихиваем в div блок с id resultBlock значение переменной html, в которой хранится введенное из текстового поля
+         value = document.getElementById("mainInput").value;
+        let html = '<li>' + value + '</li>';
         document.getElementById("resultBlock").insertAdjacentHTML('beforeend', html);  
         
       }

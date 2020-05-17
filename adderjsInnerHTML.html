@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adderjs</title>
+    
+
+</head>
+<body>
+    
+    <div id="text">
+    
+            <input type="text" id="mainInput" size="30" placeholder="Напиши сюда, а я ебану в список">
+            <button id="add">Жать</button>
+
+    </div>
+    <ul id="resultBlock"></ul>
+    <script>
+      
+      function giver (){
+         mainInputId = document.getElementById("mainInput").value;
+        //в переменную html запихиваем полученные данные из текстового поля 
+        
+        //запихиваем в div блок с id resultBlock значение переменной html, в которой хранится введенное из текстового поля
+        document.getElementById("resultBlock").innerHTML += '<li>' + mainInputId + '</li>';  
+        
+      }
+      document.getElementById("add").addEventListener('click', giver);
+      
+      
+    </script>
+</body>
+</html>
+
+
+

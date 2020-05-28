@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adderjs</title>
+    
+
+</head>
+<body>
+    
+    <div id="text">
+    
+            <input type="text" id="mainInput" size="30" placeholder="Напиши сюда, а я ебану в список">
+            <button id="add">Жать</button>
+
+    </div>
+    <ul id="resultBlock"></ul>
+    <script>
+      
+      function giver (){
+        //забираем введённые значения
+        value = document.getElementById("mainInput").value;
+        //создаем li элемент в документе
+        let newElementLi = document.createElement('li');
+        //присваиваем этому новому li элементу значения полученные из текстового поля
+        newElementLi.innerHTML +=  value;
+        //скармливаем в список с id="resultBlock" полученные значения
+        resultBlock.appendChild(newElementLi);
+
+      }
+      document.getElementById("add").addEventListener('click', giver);
+      
+      
+    </script>
+</body>
+</html>
+
+
+

@@ -6,31 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adderjs</title>
-    
-
 </head>
 <body>
-    
     <div id="text">
-    
             <input type="text" id="mainInput" size="30" placeholder="Напиши сюда">
             <button id="add">Жать</button>
-
     </div>
     <ul id="resultBlock"></ul>
-    <script>
-      
-      function giver (){
+    <script><
+      function giver() {
         let value = document.getElementById("mainInput").value;
         let newElementLi = document.createElement('li');
         newElementLi.innerText = value;
         resultBlock.appendChild(newElementLi);
-        
-        
       }
       document.getElementById("add").addEventListener('click', giver);
-      
-      
     </script>
 </body>
 </html>

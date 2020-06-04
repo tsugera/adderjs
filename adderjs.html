@@ -6,32 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adderjs</title>
-    
-
 </head>
+ 
 <body>
-    
-    <div id="text">
-    
-            <input type="text" id="mainInput" size="30" placeholder="Напиши сюда, а я ебану в список">
+    <div id="email">
+        <form name="validationField">
+            <input type="text" id="email" name="email" size="30" placeholder="Email">
             <button id="add">Жать</button>
-
+        </form>
     </div>
     <ul id="resultBlock"></ul>
-    <script>
-      
-      function giver (){
-         value = document.getElementById("mainInput").value;
-        let html = '<li>' + value + '</li>';
-        document.getElementById("resultBlock").insertAdjacentHTML('beforeend', html);  
-        
-      }
-      document.getElementById("add").addEventListener('click', giver);
-      
-      
-    </script>
+    <script src="adder.js"></script>
 </body>
 </html>
-
-
-

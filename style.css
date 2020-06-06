@@ -3,3 +3,11 @@
     left: 30rem;
     top: 10rem;
 }
+
+li {
+    list-style: none;
+}
+
+li::before {
+    content: "> "
+}

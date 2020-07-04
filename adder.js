@@ -1,6 +1,6 @@
 function validate(input) {
   let regex = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-  let adress = input.value;
+  let adress = email.value;
   if (regex.test(adress))
     return true;   
   alert("Введите корректный email");

@@ -1,4 +1,4 @@
-function validate(input) {
+function validate() {
   let regex = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
   let adress = email.value;
   if (regex.test(adress))
